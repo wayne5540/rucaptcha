@@ -19,6 +19,7 @@ module RuCaptcha
       @config.length        = 5
       @config.strikethrough = true
       @config.expires_in    = 2.minutes
+      @config.skip_cache_store_check = false
 
       if Rails.application
         @config.cache_store = Rails.application.config.cache_store

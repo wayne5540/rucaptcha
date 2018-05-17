@@ -11,5 +11,7 @@ module RuCaptcha
     attr_accessor :length
     # strikethrough, default: true
     attr_accessor :strikethrough
+    # skip_cache_store_check, default: false
+    attr_accessor :skip_cache_store_check
   end
 end
